@@ -3,7 +3,19 @@ body {
   color: darkred;
 }
 h1 {
-  background-color: lavender;
+  text-align: left;
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  border-radius: 10px;
+  color: beige;
 }
 h3 {
 }
