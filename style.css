@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+  color: darkred;
+}
+h1 {
+  background-color: lavender;
+}
+h3 {
+}
+img {
+  width: 50;
+  height: 50;
+}
+
+#prompt {
+  text-align: center;
+  background-color: black;
+  color: blanchedalmond;
+  border-left: brown;
+}
+#comida {
+  text-align: center;
+}

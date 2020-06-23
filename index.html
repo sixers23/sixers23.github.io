@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda de comidas</title>
+  </head>
+  <body>
+    <h1>Agenda de comidas</h1>
+    <p>
+      Esta herramienta te va a permitar llevar un registro de tus comidas para
+      facilitar un seguimiento en el caso de que estes, por recomendacion de un
+      profesional, llevando a cabo una dieta.
+    </p>
+
+    <div id="IMC">
+      <h3>Indice de masa corporal</h3>
+      <p>
+        Esta seccion te permitira consultar si estas dentro de los parametros
+        saludables, solo proporcionandole unos simples datos personales
+      </p>
+      <p>
+        Peso : <input type="number" placeholder="Introduzca su peso" id="peso" /> kg.<br />
+        Altura: <input type="number" placeholder="Introduzca su altura" id="altura" /> mts. <br /><br>
+        Resultado : <p id="prompt"></p> <br />
+        <button onclick="calcular()"><strong>Calcular</strong></button>
+      </p>
+
+      <h4>Tabla de valores - IMC.</h4>
+      <img
+        src="https://movimientoydeporte.files.wordpress.com/2014/03/imc-general.jpg?w=294"
+      />
+    </div>
+    <div id="comida">
+      <h3>Lista de comidas</h3>
+      <p>
+        Fecha: <input type="date" name="" id="fecha" /><br /><br />
+        
+        Desayuno:<input type="text" name="" id="breakfast" /> <br />
+        Almuerzo: <input type="text" name="" id="lunch" /><br />
+        Merienda: <input type="text" name="" id="snack" /><br />
+        Cena: <input type="text" name="" id="dinner" /><br />
+        
+        <br>
+
+        <button onclick="agendar()">Agendar</button>
+      </p>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
