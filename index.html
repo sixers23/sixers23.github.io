@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <link rel="icon" href="icon.png"/>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agenda de comidas</title>
+    <link href="icon.png" ref="stylesheet">
   </head>
   <body>
-    <h1>Agenda de comidas</h1>
-    <h4 id="parrafo1">
-      Esta herramienta te va a permitar llevar un registro de tus comidas para
-      facilitar un seguimiento en el caso de que estes, por recomendacion de un
-      profesional, llevando a cabo una dieta.
-    </h4>
+    <header>
+      <h1 style="color: black;">Agenda de comidas</h1>
+      <nav></nav>
+      <article> Esta herramienta te va a permitar llevar un registro de tus comidas para
+        facilitar un seguimiento en el caso de que estes, por recomendacion de un
+        profesional, llevando a cabo una dieta.</article>
+    </header>
+    
+    <aside>
 
-    <div id="IMC">
+    <div id="imc">
       <h3>Indice de masa corporal</h3>
       <p>
         Esta seccion te permitira consultar si estas dentro de los parametros
         saludables, solo proporcionandole unos simples datos personales
       </p>
-      <p>
-        Peso : <input type="number" placeholder="Introduzca su peso" id="peso" /> kg.<br />
-        Altura: <input type="number" placeholder="Introduzca su altura" id="altura" /> mts. <br /><br><br>
-        
-        Resultado : <p id="prompt"></p> <br />
-        <button onclick="calcular()"><strong>Calcular</strong></button>
-      </p>
-
       
-    </div>
-    <div id="comida">
-      <h3>Lista de comidas</h3>
       <p>
-        Fecha: <input type="date" name="" id="fecha" /><br /><br />
+      <pre>
+        Peso : <input type="number" placeholder="Introduzca su peso" id="peso" /> kg.
+        Altura:  <input type="number" placeholder="Introduzca su altura" id="altura" /> mts. <br />
+      </pre> 
+        Resultado : <p id="prompt"></p> <br />
+        <button class="boton" onclick="calcular()"><strong>Calcular</strong></button>
+      </p>
+     </div>
+      
+    
+    <div class="comida">
+      <h3>Lista de comidas</h3>
+      <pre>
+      <p>
+        Fecha: <input type="date" name="" id="fecha" /><br />
         
-        Desayuno:<input type="text" name="" id="breakfast" /> <br />
-        Almuerzo: <input type="text" name="" id="lunch" /><br />
-        Merienda: <input type="text" name="" id="snack" /><br />
-        Cena: <input type="text" name="" id="dinner" /><br />
-        
+        Desayuno:  <input type="text" name="" id="breakfast" /> 
+        Almuerzo: <input type="text" name="" id="lunch" />
+        Merienda: <input type="text" name="" id="snack" />
+            Cena: <input type="text" name="" id="dinner" />
         <br>
+      
 
-        <button onclick="agendar()">Agendar</button>
-
+        <button class="boton" onclick="agendar()">Agendar</button>
+     </div>
+     <div class="comida" id="resultado">
+       <pre>
         <p id="f"></p>
         <p id="d"></p>
         <p id="a"></p>
         <p id="m"></p>
         <p id="c"></p>
-      </p>
-      <script src="script.js"></script>
-    </div>
+      </p><br>
+      <button class="boton" onclick="verA()">Ver Agenda</button>
+
+      
+   </div>
+   
+   <footer>
+     <p>Creado por Nicolas Misseri® <button><a href="http://facebook.com" target="_blank">Facebook</a></button><button><a href="http://twitter.com" target="_blank">Twitter</a></button><button><a href="http://instagram.com" target="_blank">Instagram</a></button>
+  </aside>
+   </footer>
+    <script src="script.js"></script>
   </body>
 </html>
