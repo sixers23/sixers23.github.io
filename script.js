@@ -56,14 +56,13 @@ function agendar() {
   }
 }
 
-function mostrarAgenda() {
-  for (var dia of agenda) {
-    document.getElementById("f").innerHTML = "Fecha: " + agenda.fecha;
-    document.getElementById("d").innerHTML = "Desayuno: " + dia.desayuno;
-    document.getElementById("a").innerHTML = "Almuerzo: " + dia.almuerzo;
-    document.getElementById("m").innerHTML = "Merienda: " + dia.merienda;
-    document.getElementById("c").innerHTML = "Cena: " + agenda.cena;
+function verA() {
+  for (var total in agenda) {
+    document.getElementById("f").innerHTML = "Fecha: " + agenda.dia.fecha;
+    document.getElementById("d").innerHTML = "Desayuno: " + agenda.dia.desayuno;
+    document.getElementById("a").innerHTML = "Almuerzo: " + agenda.dia.almuerzo;
+    document.getElementById("m").innerHTML = "Merienda: " + agenda.dia.merienda;
+    document.getElementById("c").innerHTML = "Cena: " + agenda.dia.cena;
   }
 }
 
-mostrarAgenda();
