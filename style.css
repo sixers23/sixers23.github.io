@@ -1,35 +1,52 @@
 body {
+  background-image: url(https://img.freepik.com/foto-gratis/smooth-azul-oscuro-vineta-negra-studio-uso-bien-como-fondo-informe-negocios-digital-plantilla-sitio-web_1258-748.jpg?size=626&ext=jpg);
   text-align: center;
-  color: darkred;
+  align-content: center;
+  color: whitesmoke;
+  font-size: inherit;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-  text-align: left;
-  background-image: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet
-  );
+  text-align: center;
+  background-color: lavenderblush;
+  padding: 10px;
+  margin: 20px 50px;
   border-radius: 10px;
-  color: beige;
-}
-h3 {
-}
-img {
-  width: 50;
-  height: 50;
+  color: royalblue;
+  /* width: 50%; */
 }
 
+.comida {
+  align-content: center;
+  padding-top: 10px;
+  background-color: lavenderblush;
+  border-radius: 15px;
+  position: relative;
+  left: 400px;
+  width: 500px;
+  color: royalblue;
+}
+.imc {
+  text-align: center;
+}
 #prompt {
+  position: relative;
+  left: 580px;
+  align-content: center;
   text-align: center;
   background-color: black;
   color: blanchedalmond;
   border-left: brown;
+  margin: 0, 0, 0, 200px;
+  width: 150px;
 }
-#comida {
-  text-align: center;
+
+.boton {
+  width: 80;
+  height: 20;
+  color: azure;
+  background-color: darkred;
+  border-radius: 10px;
+  padding: 10px;
 }
